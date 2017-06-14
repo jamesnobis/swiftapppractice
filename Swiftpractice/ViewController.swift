@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var label1: UILabel!
     
@@ -19,8 +19,13 @@ class ViewController: UIViewController {
     
     @IBAction func button1(_ sender: Any) {
         
-        label1.text = "The answer is \(Double(text1.text!)! + Double(text2.text!)!)"
-    
+        let addition = false
+        
+        if addition {
+            label1.text = "The answer is \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            label1.text = "The answer is \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     }
     
     
@@ -30,16 +35,16 @@ class ViewController: UIViewController {
         
         label1.text = "Hello World!"
         
-    
-    
+        
+        
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
